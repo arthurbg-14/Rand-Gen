@@ -1,0 +1,30 @@
+<head>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <label class="tittle" for="hud">RANDOM NUMBER GENERATOR</label>
+    <div id="hud" class="hud">
+        <div>
+            <input id="min" class="range" type="number" placeholder="Min">
+            <img class ="arrow" src="arrow.png">
+            <input id="max" class="range" type="number" placeholder="Max">
+        </div>
+        <div>
+            <h1 style="margin: 30px" id="number">0</h1>
+            <button class="button" onclick="genRandom()">GENERATE</button>
+        </div>
+    </div>
+    <script>
+        function genRandom(){
+            const min = parseInt(document.getElementById("min").value)
+            const max = parseInt(document.getElementById("max").value)
+            var number = document.getElementById("number")
+            if(min > 0){
+                number.innerHTML = Math.floor(Math.random() * max) + min
+            }
+            else{
+                number.innerHTML = Math.floor(Math.random() * (max+Math.abs(min)+1) - Math.abs(min))
+            }
+        }
+    </script>
+</body>

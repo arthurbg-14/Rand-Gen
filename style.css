@@ -1,0 +1,35 @@
+.range {
+    width: 60px;
+}
+.arrow {
+    width: 60px;
+    height: 50px;
+    top: 25px;
+    margin: 5px;
+    position: relative;
+}
+.hud {
+    width: 250px;
+    height: 250px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin: -125px 0 0 -125px;
+    border: 5px solid black;
+    border-radius: 7%;
+    text-align: center;
+}
+.button {
+    width: 100px;
+    height: 50px;
+}
+.tittle {
+    width: 260px;
+    height: 250px;
+    position: absolute;
+    left: 50%;
+    top: 45%;
+    margin: -125px 0 0 -125px;
+    border-radius: 7%;
+    text-align: center;
+}

@@ -1,2 +1,1 @@
-# Rand-Gen
-Random number generator
+![plot](./example.png)
