@@ -20,7 +20,7 @@
             const max = parseInt(document.getElementById("max").value)
             var number = document.getElementById("number")
             if(min > 0){
-                number.innerHTML = Math.floor(Math.random() * max) + min
+                number.innerHTML = Math.floor(Math.random() * (max-min+1)) + min
             }
             else{
                 number.innerHTML = Math.floor(Math.random() * (max+Math.abs(min)+1) - Math.abs(min))
